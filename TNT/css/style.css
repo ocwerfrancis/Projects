@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #feffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eef2f7;
+    padding: 1.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* ---------- Hero Section ---------- */
+.hero-section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1620693778087-2bced33a4a06?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdpbGQlMjBsaWZlfGVufDB8fDB8fHww");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 51, 102, 0.15);
+    min-height: 480px;
+    padding: 3rem 2rem;
+}
+
+
+/* Dark overlay for readability */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 30, 60, 0.45);
+    z-index: 1;
+}
+
+/* Badge (your provided .hero-title) */
+.hero-title {
+    position: relative;
+    z-index: 2;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    font-size: 0.8rem;
+    color: #003366;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Hero content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+    padding: 0.5rem;
+}
+
+.hero-content .eyebrow {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.5rem;
+}
+
+.hero-content .main-title {
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.08;
+    margin-bottom: 0.4rem;
+    text-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+}
+
+.hero-content .main-title span {
+    font-weight: 300;
+    display: block;
+    font-size: 0.45em;
+    color: rgba(255, 255, 255, 0.85);
+    letter-spacing: 0.04em;
+    margin-top: 0.15rem;
+}
+
+.hero-content .tagline {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 51, 102, 0.3);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 0.6rem 1.8rem;
+    border-radius: 100px;
+    display: inline-block;
+    margin-top: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.info-panel {
+    width: 100%;
+    margin-top: 1.5rem;
+    background: #ffffff;
+    border-radius: 1.5rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 8px 32px rgba(0, 51, 102, 0.08);
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem 2rem;
+    color: #003366;
+}
+
+.info-panel .description {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #1a3a5c;
+    flex: 2;
+    min-width: 220px;
+    text-align: left;
+}
+
+.info-panel .description strong {
+    font-weight: 600;
+    color: #003366;
+}
+
+.info-panel .activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem 1rem;
+    justify-content: space-between;
+}
+
+.info-panel .image-title {
+    align-items: center;
+}
+
+.info-panel .activities .image-logo {
+    vertical-align: middle;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 0 1px #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-panel .activities .image-info {
+    display: inline-flex;
+    align-items: center;
+}
