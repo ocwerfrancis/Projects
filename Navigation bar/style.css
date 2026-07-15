@@ -8,3 +8,70 @@
 body {
     background: #f0faff;
 }
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 200px;
+    background: #4a98f7;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
+}
+
+.nav,
+.nav, .nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    column-gap: 20px;
+}
+
+.nav {
+    justify-content: space-around;
+}
+
+.nav .logo {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav .search-icons {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav .search-box {
+    position: absolute;
+    right: 250px;
+    height: 45px;
+    max-width: 555px;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.search-box input {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 0 15px 0 45px;
+}
+
+.search-box .search-icons {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    left: 15px;
+    color: #4a98f7;
+    transform: translateY(-50%);
+}
