@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="login-form">
+
+        <form action="#">
+            <h3 class="login-title">Log in with</h3>
+            <div class="login-option">
+
+                <!-- Google Option -->
+                <div class="option">
+                    <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1812573153:1655944654029516&flowEntry=ServiceLogin&flowName=WebLiteSignIn&ifkv=AX3vH39E0iYVTmn-NoMNM_C35EPrno8LWsRx2Qhr0HApkVLZ-Zc_Vql8ouaSQOiXzEmthrpOPAV5" role="button" target="_blank">
+                        <img src="logos/google.png" alt="Google">
+                        <span>Google</span>
+                    </a>
+                </div>
+
+                <!-- Apple Option -->
+                <div class="option">
+                    <a href="https://account.apple.com/choose-country-region" role="button" target="_blank">
+                        <img src="logos/apple.png" alt="Apple">
+                        <span>Apple</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- login Seperator -->
+            <p class="separator">
+                <span>or</span>
+            </p>
+
+            <!-- Email input box  -->
+            <div class="input-box">
+
+                <div class="email-title">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter email address" required>
+                </div>
+
+            </div>
+
+            <!--  Password input box -->
+            <div class="input-box">
+
+                <div class="password-title">
+                    <label for="password">Password</label>
+                    <a href="#">Forgot Password</a>
+                </div>
+
+                <input type="password" id="password" placeholder="Enter your password" required>
+
+            </div>
+            <!-- Log in Button -->
+            <button type="submit">Log In</button>
+            <p class="signup">Don't have an account? <a href="#"><span class="span-signup">Sign up</span></a></p>
+        </form>
+    </div>
+</body>
+</html>

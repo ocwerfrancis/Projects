@@ -1,0 +1,186 @@
+/* Google fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Resetting default styling and setting font style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("logos/background.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Login form styling */
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 41px 30px;
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.login-form .login-title {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Google & Apple button styling */
+.login-form .login-option {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-form .login-option .option {
+    width: calc(100% / 2 - 12px);
+}
+
+
+.login-form .login-option .option a {
+    margin: 12px 0;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #F8F8FB;
+    border: 1px solid #DADAF2;
+    border-radius: 5px;
+    margin: 34px 0 24px 0;
+    text-decoration: none;
+    color: #171645;
+    font-weight: 500;
+    transition: 0.2s ease;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.login-form .login-option .option a:hover {
+    background: #ededf5;
+    border-color: #626cd6;
+}
+
+.login-form .login-option .option a img {
+    max-width: 25px;
+}
+
+.login-form p {
+    text-align: center;
+    font-weight: 500;
+}
+.login-form .separator {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+/* Login option separator styling */
+.login-form .separator span {
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    padding: 0 10px;
+    position: relative;
+    border-radius: 3px;
+}
+.login-form .separator::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    background: #C2C2C2;
+    display: block;
+}
+
+form .input-box label {
+    display: block;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+form .input-box input {
+    width: 100%;
+    height: 57px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 17px;
+    padding: 0px 20px;
+    margin-bottom: 25px;
+    transition: 0.2s ease;
+}
+
+form .input-box input:focus {
+    border-color: #007A74;
+}
+
+form .input-box .password-title {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+form .input-box .email-title {
+    position: relative;
+}
+
+
+a {
+    text-decoration: none;
+    color: #007A74;
+    font-weight: 500;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+form button {
+    width: 100%;
+    height: 56px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #007A74;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 28px;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: #007FFF;
+}
+
+.login-form .login-title,
+form .input-box label,
+.login-form .signup {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.login-form p .span-signup {
+color: #fff;
+}
+
